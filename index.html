@@ -1,36 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" >
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <title>Imóveis</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
 </head>
+
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <img src="" alt="">
-                <h3></h3>
+        <div id="carousel-exemplo" class="carousel carousel-fade slide carousel-dark" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100"
+                        src="https://cdn.pixabay.com/photo/2022/10/30/16/42/cat-7557859_960_720.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Gato</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100"
+                        src="https://cdn.pixabay.com/photo/2022/11/01/09/48/balloon-7561819_960_720.jpg" />
+                    <div class="carousel-caption ">
+                        <h2>Balão</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100"
+                        src="https://cdn.pixabay.com/photo/2022/11/01/07/23/raven-7561469_960_720.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Corvo</h2>
+                    </div>
+                </div>
             </div>
-            <div class="col">
-                <img src="" alt="">
-                <h3></h3>
-            </div>
-            <div class="col">
-                <img src="" alt="">
-                <h3></h3>
-            </div>
-            <div class="col">
-                <img src="" alt="">
-                <h3></h3>
-            </div>
-            <div class="col">
-                <img src="" alt="">
-                <h3></h3>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
             </div>
         </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        Imagem A
+                    </div>
+                    <img src="https://cdn.pixabay.com/photo/2022/10/30/16/42/cat-7557859_960_720.jpg" />
+                    <div class="card-body">
+                        <h4 class="card-title">O Gato</h4>
+                        <h5 class="card-subtitle">Pixabay</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quasi, dicta rerum nostrum, officiis eos veritatis repudiandae fugit voluptatem mollitia distinctio quod hic maxime quidem? Neque, aspernatur! Magni, ut iure!
+                        </p>
+                        <a href="https://cdn.pixabay.com/photo/2022/10/30/16/42/cat-7557859_960_720.jpg" class="btn btn-primary">Abrir imagem</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        Imagem B
+                    </div>
+                    <img src="https://cdn.pixabay.com/photo/2022/11/01/09/48/balloon-7561819_960_720.jpg" />
+                    <div class="card-body">
+                        <h4 class="card-title">O Balão</h4>
+                        <h5 class="card-subtitle">Pixabay</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quasi, dicta rerum nostrum, officiis eos veritatis repudiandae fugit voluptatem mollitia distinctio quod hic maxime quidem? Neque, aspernatur! Magni, ut iure!
+                        </p>
+                        <a href="https://cdn.pixabay.com/photo/2022/11/01/09/48/balloon-7561819_960_720.jpg" class="btn btn-primary">Abrir imagem</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        Imagem C
+                    </div>
+                    <img src="https://cdn.pixabay.com/photo/2022/11/01/07/23/raven-7561469_960_720.jpg" />
+                    <div class="card-body">
+                        <h4 class="card-title">O Corvo</h4>
+                        <h5 class="card-subtitle">Pixabay</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quasi, dicta rerum nostrum, officiis eos veritatis repudiandae fugit voluptatem mollitia distinctio quod hic maxime quidem? Neque, aspernatur! Magni, ut iure!
+                        </p>
+                        <a href="https://cdn.pixabay.com/photo/2022/11/01/07/23/raven-7561469_960_720.jpg" class="btn btn-primary">Abrir imagem</a>
+                    </div>
+                </div>
+            </div>
     </div>
+    <script src="lib/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
